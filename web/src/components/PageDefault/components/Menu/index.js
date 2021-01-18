@@ -10,13 +10,15 @@ import Button from '../../../Button';
 
 const Menu = () => {
     return (
-        <nav className="Menu">
-            <Link to="/">
-                <img className="Logo" src={Logo} alt="Aluraflix" />
-            </Link>
+        <>
+            <nav className="Menu">
+                <Link to="/">
+                    <img className="Logo" src={Logo} alt="Aluraflix" />
+                </Link>
 
-            <Button as={Link} className="ButtonLink" to="/cadastro/video">Vídeo Novo</Button>
-        </nav>
+                <Button as={Link} className="ButtonLink" to="/cadastro/video">Vídeo Novo</Button>
+            </nav>
+        </>
     );
 }
 export default Menu;

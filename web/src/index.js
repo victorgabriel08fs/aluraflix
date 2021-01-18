@@ -6,6 +6,7 @@ import './index.css';
 
 import App from './App';
 import CadastroVideo from './pages/cadastro/Video';
+import CadastroCategoria from './pages/cadastro/Categoria';
 
 
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/cadastro/categoria" component={CadastroCategoria} />
       <Route component={() => {
         <div>Erro 404 --- Not Found</div>
       }} />
